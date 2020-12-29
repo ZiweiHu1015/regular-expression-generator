@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+        <head>
+        <script defer src = "regex.js" ></script>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        </head>
+    
+        <body>
+        <div class = "jumbotron text-center"> 
+            <h1 style = "color:dodgerblue"> Regex Parser </h1>
+        </div>
+
+        <div class = "text-center" id = "inputArea" >
+    
+                <p  class = "text-info">Type your regular expression here:</p>
+                <label style = "color:lightcoral">Regex:
+                <input type = "text" name = "reg" id= "regex" placeholder = "[A-Z]+" size ="50">
+                </label><br><br>
+                
+                <p class="text-info">Test input here! </p>
+                <label style = "color:lightcoral"> Text:
+                <input type = "text" name= "text" id="text" placeholder = "The QUICK Brown Fox Jumped OVER the lazy DOG." size ="50">
+                </label><br><br>
+
+        </div>
+
+        <div class = "text-center">
+            <button type = "button" class = "btn btn-info" onclick = "highlight()" id = "phase">Phase!</button>
+            <br><br>
+            <p class="text-info">The result of parsing your regex on the input text you've provided:</p>
+            <p id = "final">  </p>
+
+        </div>  
+        
+        <script>
+            var button = document.getElementById("phase");
+        </script>
+
+       
+
+    
+    
+        
+        
+    </body>
+</html>
